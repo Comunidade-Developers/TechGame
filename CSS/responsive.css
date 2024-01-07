@@ -1,0 +1,62 @@
+@media (max-width: 832px) {
+  .container-header{
+    align-items: center;
+    background: rgb(20,155,255);
+    background: radial-gradient(circle, rgba(20,155,255,1) 31%, rgba(0,0,0,1) 100%);
+    color: #ffffff;
+    display: flex;
+  }
+  .logo img{
+    width: 3rem;
+    height: 3rem;
+    margin-top: 0.1rem; 
+  }
+  .logo img:hover{
+    transform: rotate(0deg);
+    transition: 0.5s all ease-in-out;
+  }
+  .titulo h1{
+    font-size: 1.5rem;
+    margin-right: 4rem;
+  }
+  .btn-search input{
+    display: none;
+  }
+  .lupa img{
+    display: none;
+  }
+  .menu{
+    width: 100%;
+    height: 94vh;
+    background-color: #000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 4.1rem;
+    left: 100%;
+    transition: all 1s;
+  }
+  #check {
+    display: none;
+  }
+  .checkBtn{
+    display: flex;
+    position: relative;
+    bottom: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1.5rem;
+  }
+  #check:checked~.menu{
+    left: 0%;
+  }
+  .content{
+    display: none;
+  }
+  .newsletter{
+    display: none;
+  }
+}
+
